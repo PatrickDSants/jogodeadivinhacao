@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Oi&display=swap');
+
+body {
+    font-family: 'Atma', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d8cfcf;
+    text-shadow: #272525 0px 0px 10px;
+    height: 100vh;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-vector/empty-background-nature-scenery_1308-34589.jpg?t=st=1743547540~exp=1743551140~hmac=0fb523eeda4018b419caad095c7921a003d7d74fb44fb6af1a65086aa2850925&w=1800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.titulo{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-decoration-color: #d8cfcf;
+    text-shadow: #272525 0px 0px 10px;
+}
+
+.game-area {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  #botao-enviar {
+    color: #d8cfcf;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    border: #d8cfcf 1px solid;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-52:after {
+    content: "";
+    color: #d8cfcf;
+    background-color: #28a745;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-52:hover:after {
+    top: 0px;
+    left: 0px;
+    background-color: #218838;
+  }
+  
+  @media (min-width: 768px) {
+    .button-52 {
+      padding: 13px 50px 13px;
+    }
+  }
+
+.feedback img {
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+}
+
+#bichinho{
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.img-git{
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    height: 2rem;
+    width: 2rem;
+}
+
+.img-git:hover{
+    opacity: 1;
+}
+
+.rodape__link {
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: #f7f2f6;
+}
+
+.rodape__link:hover {
+    opacity: 0.8;
+    font-size: 1.1rem;
+} 
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    gap: 10px;
+}

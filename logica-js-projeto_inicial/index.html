@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="titulo">Descubra o Número!</h1>
+        <p id="dica">Digite um número entre 1 e 100 e veja se esta Quente ou Frio:</p>
+        <div class="game-area">
+            <input type="number" id="input-numero" aria-label="Digite seu palpite">
+            <button id="botao-enviar" class="button-52" role="button">Chutar</button>
+        </div>
+        <p id="tentativas">Tentativas restantes: <span id="contador">10</span></p>
+        <div class="feedback">
+            <img id="bichinho" src="./img/dinousauroNormal-Photoroom.png" alt="Bichinho reagindo ao seu palpite">
+        </div>
+        <p id="resultado" role="alert"></p>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+<footer class="rodape">
+    <a class="rodape__link" href="https://github.com/PatrickDSants" target="_blank">Coded by <img class="img-git" alt="icone do github do patrick farias" src="./img/github2.png"></a>
+</footer>
+
+</html>
