@@ -35,7 +35,14 @@ botao.addEventListener("click", function () {
         resultado.innerHTML = `O número secreto é ${dica}. Você ainda tem ${maxTentativas - tentativas} tentativas.`;
 
         // Muda a imagem de acordo com a distância
-        bichinho.src = diferenca > 30 ? "./logica-js-projeto_inicial/img/dinousaurotriste" : "./logica-js-projeto_inicial/img/dinousaurotriste";
+        bichinho.src = diferenca > 30 ? "./logica-js-projeto_inicial/img/dinousaurotriste-Photoroom.png" : "./logica-js-projeto_inicial/img/dinousaurofeliz-Photoroom.png";
+        // Adiciona animação de shake se a diferença for maior que 30  
+         if (diferenca > 30) {
+                bichinho.classList.add("shake-animation");
+                setTimeout(() => {
+                 bichinho.classList.remove("shake-animation");
+                }, 1000); // Remove a animação após 1 segundo
+          }
     }
 
     // Limpa o campo de entrada após cada tentativa
