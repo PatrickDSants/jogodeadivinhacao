@@ -5,11 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d8cfcf;
-    text-shadow: #272525 0px 0px 10px;
+    color: #28a745;
+    text-shadow: #d8cfcf 10px;
     height: 100vh;
     text-align: center;
-    background-image: url('https://img.freepik.com/free-vector/empty-background-nature-scenery_1308-34589.jpg?t=st=1743547540~exp=1743551140~hmac=0fb523eeda4018b419caad095c7921a003d7d74fb44fb6af1a65086aa2850925&w=1800');
+    background-image: url('./img/Backgrounds-Pixel.png');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -25,7 +25,7 @@ body {
     font-size: 40px;
     margin-bottom: 20px;
     text-decoration-color: #d8cfcf;
-    text-shadow: #272525 0px 0px 10px;
+    text-shadow: #d8d8d8 10px;
 }
 
 .game-area {
@@ -116,6 +116,13 @@ input {
 
 .img-git:hover{
     opacity: 1;
+}
+
+.resultado-style{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #d8cfcf;
+    text-shadow: #d8d8d8 10px;
 }
 
 .rodape__link {
