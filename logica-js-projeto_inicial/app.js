@@ -24,18 +24,18 @@ botao.addEventListener("click", function () {
 
     if (chute === numeroSecreto) {
         resultado.innerHTML = `🎉 Parabéns! Você acertou o número ${numeroSecreto} em ${tentativas} tentativas!`;
-        bichinho.src = "./img/dinousauroganhou-Photoroom.png";
+        bichinho.src = "./logica-js-projeto_inicial/img/dinousauroganhou-Photoroom.png";
         botao.disabled = true;
     } else if (tentativas >= maxTentativas) {
         resultado.innerHTML = `😞 Você perdeu! O número secreto era ${numeroSecreto}.`;
-        bichinho.src = "./img/dinousauroperdeu-Photoroom.png";
+        bichinho.src = "./logica-js-projeto_inicial/img/dinousauroperdeu-Photoroom.png";
         botao.disabled = true;
     } else {
         let dica = chute < numeroSecreto ? "Maior" : "Menor";
         resultado.innerHTML = `O número secreto é ${dica}. Você ainda tem ${maxTentativas - tentativas} tentativas.`;
 
         // Muda a imagem de acordo com a distância
-        bichinho.src = diferenca > 30 ? "./img/dinousaurotriste-Photoroom.png" : "./img/dinousaurofeliz-Photoroom.png";
+        bichinho.src = diferenca > 30 ? "./logica-js-projeto_inicial/img/dinousaurotriste" : "./logica-js-projeto_inicial/img/dinousaurotriste";
     }
 
     // Limpa o campo de entrada após cada tentativa
